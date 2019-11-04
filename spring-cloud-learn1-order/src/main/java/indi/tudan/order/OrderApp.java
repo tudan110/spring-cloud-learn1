@@ -13,7 +13,8 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableHystrix
-@ComponentScan(basePackages = {"indi.tudan.order.controller", "indi.tudan.order.service","indi.tudan.order.properties"})//手动指定bean扫描范围
+@ComponentScan(basePackages = {"indi.tudan.order.controller", "indi.tudan.order.service", "indi.tudan.order.properties"})
+//手动指定bean扫描范围
 public class OrderApp {
     public static void main(String[] args) {
         SpringApplication.run(OrderApp.class, args);
@@ -21,6 +22,7 @@ public class OrderApp {
 
     /**
      * 向Spring容器中定义RestTemplate对象
+     *
      * @return
      */
     @Bean

@@ -25,7 +25,7 @@ public class ItemController {
      */
     @GetMapping(value = "item/{id}")
     public Item queryItemById(@PathVariable("id") Long id) {
-        System.out.println("service port："+port);
+        System.out.println("service port：" + port);
         return this.itemService.queryItemById(id);
     }
 

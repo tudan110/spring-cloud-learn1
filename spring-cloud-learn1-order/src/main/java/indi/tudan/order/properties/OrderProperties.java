@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  * 以 myspcloud 开头的配置被匹配到
  */
 @Component
-@ConfigurationProperties(prefix="myspcloud")
+@ConfigurationProperties(prefix = "myspcloud")
 public class OrderProperties {
 
     private ItemProperties item = new ItemProperties();

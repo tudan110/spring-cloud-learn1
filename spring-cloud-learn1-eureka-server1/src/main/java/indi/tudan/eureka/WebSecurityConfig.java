@@ -12,11 +12,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
      * 高版本的丢弃了配置:
-     *
+     * <p>
      * security:
-     *   basic:
-     *    enabled: true
-     *
+     * basic:
+     * enabled: true
+     * <p>
      * 应该使用以下方式开启
      *
      * @param http

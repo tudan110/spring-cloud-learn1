@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EurekaController {
 
     @RequestMapping("test/eureka")
-    public String fun1(){
+    public String fun1() {
         return "这是Eureka注册中心！！";
     }
 }

@@ -11,13 +11,16 @@ public class Item {
     private String desc;
 
     private Long price;
-    public Item(){}
+
+    public Item() {
+    }
+
     public Item(long id, String title, String pic, String desc, long price) {
-        this.id=id;
-        this.title=title;
-        this.pic=pic;
-        this.desc=desc;
-        this.price=price;
+        this.id = id;
+        this.title = title;
+        this.pic = pic;
+        this.desc = desc;
+        this.price = price;
     }
 
     public Long getId() {

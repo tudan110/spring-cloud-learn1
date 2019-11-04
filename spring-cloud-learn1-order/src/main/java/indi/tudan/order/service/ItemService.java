@@ -15,15 +15,13 @@ import java.util.List;
 @Service
 public class ItemService {
 
+    @Autowired
+    OrderProperties orderProperties;
     /**
      * Spring框架对RESTful方式的http请求做了封装，来简化操作
      */
     @Autowired
     private RestTemplate restTemplate;
-
-    @Autowired
-    OrderProperties orderProperties;
-
     @Autowired
     private DiscoveryClient discoveryClient;
 

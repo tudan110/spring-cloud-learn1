@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@ComponentScan(basePackages = {"indi.tudan.commodity.controller","indi.tudan.commodity.service"})
+@ComponentScan(basePackages = {"indi.tudan.commodity.controller", "indi.tudan.commodity.service"})
 public class AppCommodity {
     public static void main(String[] args) {
         SpringApplication.run(AppCommodity.class, args);
