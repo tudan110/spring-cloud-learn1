@@ -17,17 +17,19 @@ public class ItemService {
 
     @Autowired
     OrderProperties orderProperties;
+
     /**
-     * Spring框架对RESTful方式的http请求做了封装，来简化操作
+     * Spring框架对 RESTful 方式的 http 请求做了封装，来简化操作
      */
     @Autowired
     private RestTemplate restTemplate;
+
     @Autowired
     private DiscoveryClient discoveryClient;
 
     /**
      * 进行容错处理
-     * fallbackMethod的方法参数个数类型要和原方法一致
+     * fallbackMethod 的方法参数个数类型要和原方法一致
      *
      * @param id
      * @return

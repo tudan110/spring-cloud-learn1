@@ -10,7 +10,7 @@ import java.util.Map;
 @Service
 public class ItemService {
 
-    private static final Map<Long, Item> ITEM_MAP = new HashMap<Long, Item>();
+    private static final Map<Long, Item> ITEM_MAP = new HashMap<>();
 
     static {// 准备一些静态数据,模拟数据库
         ITEM_MAP.put(1L, new Item(1L, "商品1", "http://图片1", "商品描述1", 1000L));

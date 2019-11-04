@@ -11,7 +11,7 @@ import java.util.*;
 @Service
 public class OrderService {
 
-    private static final Map<String, Order> ORDER_DATA = new HashMap<String, Order>();
+    private static final Map<String, Order> ORDER_DATA = new HashMap<>();
 
     static {
         // 模拟数据库，构造测试数据
@@ -20,7 +20,7 @@ public class OrderService {
         order1.setCreateDate(new Date());
         order1.setUpdateDate(order1.getCreateDate());
         order1.setUserId(1L);
-        List<OrderDetail> orderDetails1 = new ArrayList<OrderDetail>();
+        List<OrderDetail> orderDetails1 = new ArrayList<>();
 
         Item item = new Item();// 此处并没有商品的数据，只是保存了商品ID，需要调用商品微服务获取
         item.setId(1L);
