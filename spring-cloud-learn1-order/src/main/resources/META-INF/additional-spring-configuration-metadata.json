@@ -4,6 +4,11 @@
       "name": "myspcloud.item.url",
       "type": "java.lang.String",
       "description": "商品服务 url"
+    },
+    {
+      "name": "app-commodity.ribbon.NFLoadBalancerRuleClassName",
+      "type": "java.lang.String",
+      "description": "Description for app-commodity.ribbon.NFLoadBalancerRuleClassName."
     }
   ]
 }
