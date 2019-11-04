@@ -15,9 +15,9 @@ import org.springframework.web.client.RestTemplate;
 @EnableHystrix
 @ComponentScan(basePackages = {"indi.tudan.order.controller", "indi.tudan.order.service", "indi.tudan.order.properties"})
 //手动指定bean扫描范围
-public class OrderApp {
+public class AppOrder {
     public static void main(String[] args) {
-        SpringApplication.run(OrderApp.class, args);
+        SpringApplication.run(AppOrder.class, args);
     }
 
     /**
