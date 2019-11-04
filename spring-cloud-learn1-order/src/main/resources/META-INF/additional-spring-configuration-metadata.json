@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "myspcloud.item.url",
+      "type": "java.lang.String",
+      "description": "商品服务 url"
+    }
+  ]
+}
