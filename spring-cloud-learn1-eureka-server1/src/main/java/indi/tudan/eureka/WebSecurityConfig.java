@@ -27,8 +27,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // Configure HttpSecurity as needed (e.g. enable http basic).
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER);
         http.csrf().disable();
-        //注意：为了可以使用 http://${user}:${password}@${host}:${port}/eureka/ 这种方式登录,所以必须是httpBasic,
-        // 如果是form方式,不能使用url格式登录
+        // 注意：为了可以使用 http://${user}:${password}@${host}:${port}/eureka/ 这种方式登录,所以必须是 httpBasic,
+        // 如果是 form 方式,不能使用 url 格式登录
         http.authorizeRequests().anyRequest().authenticated().and().httpBasic();
     }
 }

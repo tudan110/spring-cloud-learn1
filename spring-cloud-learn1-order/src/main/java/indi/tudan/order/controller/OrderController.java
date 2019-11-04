@@ -19,7 +19,7 @@ public class OrderController {
     }
 
     /**
-     * 断路器
+     * 使用 Hystrix 断路器
      *
      * @param orderId
      * @return

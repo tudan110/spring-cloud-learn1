@@ -24,6 +24,12 @@ eureka:
     register-with-eureka: true
     # 是否需要从 eureka 上检索服务
     fetch-registry: true
+  instance:
+    # 将自己的 ip 地址注册到 Eureka 服务中
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    # 指定实例 id
+    instance-id: ${spring.application.name}###${server.port}
 
 app-commodity:
   ribbon:

@@ -14,14 +14,13 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @EnableHystrix
 @ComponentScan(basePackages = {"indi.tudan.order.controller", "indi.tudan.order.service", "indi.tudan.order.properties"})
-//手动指定bean扫描范围
 public class AppOrder {
     public static void main(String[] args) {
         SpringApplication.run(AppOrder.class, args);
     }
 
     /**
-     * 向Spring容器中定义RestTemplate对象
+     * 向 Spring 容器中定义 RestTemplate 对象
      *
      * @return
      */
